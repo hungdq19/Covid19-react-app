@@ -28,7 +28,7 @@ function ChartCovid({ report = [], selectedCountry }) {
          </Grid>
          <Grid item sm={4} xs={12}>
             <Card>
-               <HighChartMap data={report} mapdata={mapdata} />
+               <HighChartMap mapdata={mapdata} />
             </Card>
          </Grid>
       </Grid>

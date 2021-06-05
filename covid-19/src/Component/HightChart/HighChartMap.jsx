@@ -57,7 +57,7 @@ function HighChartMap({ mapdata }) {
             series: [
                {
                   ...initOptions.series[0],
-                  mapdata: mapdata,
+                  mapData: mapdata,
                   data: fakeData,
                },
             ],
@@ -68,6 +68,7 @@ function HighChartMap({ mapdata }) {
 
    useEffect(() => {
       if (chartRef && chartRef.current) {
+         console.log(chartRef.current);
          chartRef.current.chart.series[0].update({
             mapdata,
          });
